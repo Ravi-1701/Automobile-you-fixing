@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Website</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        nav li {
+            float: left;
+        }
+        
+        nav li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        nav li a:hover {
+            background-color: #111;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table td,
+        table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .booking-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 10px;
+        }
+        
+        .form-group label {
+            display: block;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+        
+        .appointment-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#automobiles">Automobiles</a></li>
+                <li><a href="#booking">Vehicle Booking</a></li>
+                <li><a href="#appointment">Tour Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="container">
+        <h1>Welcome to our Automobile Website</h1>
+        <!-- Add content for the home page here -->
+    </div>
+
+    <div id="about" class="container">
+        <h1>About Us</h1>
+        <!-- Add content for the about us page here -->
+    </div>
+
+    <div id="automobiles" class="container">
+        <h1>Automobiles</h1>
+        <table>
+            <tr>
+                <th>Car</th>
+                <th>Details</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>Car 1</td>
+                <td>Details about Car 1</td>
+                <td><img src="car1.jpg" alt="Car 1"></td>
+            </tr>
+            <tr>
+                <td>Car 2</td>
+                <td>Details about Car 2</td>
+                <td><img src="car2.jpg" alt="Car 2"></td>
+            </tr>
+            <!-- Add more cars as needed -->
+        </table>
+    </div>
+
+    <div id="booking" class="container">
+        <h1>Vehicle Booking</h1>
+        <div class="booking-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="car">Car:</label>
+                    <select id="car">
+                        <option value="car1">Car 1</option>
+                        <option value="car2">Car 2</option>
+                        <!-- Add more car options as needed -->
+                    </select>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="appointment" class="container">
+        <h1>Tour Appointment</h1>
+        <div class="appointment-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" required>
+                </div>
+                <button type="submit">Schedule Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Add your JavaScript code here if needed
+    </script>
+</body>
+
+</html>
